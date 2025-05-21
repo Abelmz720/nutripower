@@ -1,0 +1,194 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1fdf3; /* verde muy claro de fondo */
+}
+
+/* Cabecera y pie de página */
+header, footer {
+    background-color: #2e7d32; /* verde oscuro natural */
+    color: white;
+    padding: 1.2em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navegación */
+nav a {
+    margin: 0 1em;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c8e6c9; /* verde muy suave */
+}
+
+/* Contenido principal */
+main {
+    padding: 2em;
+}
+
+/* Sección de productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+.producto {
+    background-color: #ffffff;
+    border: 1px solid #c8e6c9;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.producto:hover {
+    transform: scale(1.03);
+}
+
+.producto h3 {
+    color: #2e7d32;
+}
+
+.producto p {
+    color: #555;
+}
+
+/* Botón principal */
+button {
+    padding: 0.7em 1.5em;
+    background-color: #43a047;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Formularios */
+.formulario {
+    max-width: 400px;
+    margin: 2em auto;
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #2e7d32;
+}
+
+input {
+    width: 100%;
+    padding: 0.6em;
+    margin-top: 0.3em;
+    border: 1px solid #c8e6c9;
+    border-radius: 5px;
+}
+
+/* Carrito */
+.carrito-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.carrito-lista li {
+    background: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.1);
+}
+
+.comprar {
+    display: block;
+    margin: auto;
+    margin-top: 2em;
+}
+
+/* Pantalla interna tipo dashboard */
+.pantalla {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1b5e20;
+}
+/* Fondo con degradado para páginas secundarias */
+.pagina-secundaria {
+    background: linear-gradient(to right, #e8f5e9, #f1f8e9); /* tonos verdes muy claros */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tarjeta central reutilizable */
+.tarjeta {
+    max-width: 400px;
+    margin: 3em auto;
+    padding: 2em;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 128, 0, 0.1);
+}
+
+.tarjeta h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 1.5em;
+}
+
+.tarjeta label {
+    display: block;
+    margin-top: 1em;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.tarjeta input {
+    width: 100%;
+    padding: 0.7em;
+    margin-top: 0.3em;
+    border-radius: 6px;
+    border: 1px solid #c8e6c9;
+    background-color: #f9fff9;
+}
